@@ -1,0 +1,3362 @@
+[
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 33.95
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 35.72
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 41.04
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 47.38
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 49.52
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 46.23
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 23.21
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 21.58
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 25.03
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 31.21
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 34.97
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 32.36
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 35.43
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 36.38
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 42.29
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 48.31
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 50.1
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 47.47
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 30.5
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 34.1
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 39.07
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 46.06
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 47.95
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 46.76
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 32.46
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 32.73
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 37.93
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 47.18
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 48.69
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 45.31
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 35.54
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 38.09
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 42.27
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 47.0
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 49.69
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 47.02
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 33.55
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 32.04
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 38.23
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 45.07
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 46.85
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2023-2024",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 41.36
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 30.67
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 36.13
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 40.83
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 45.01
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 49.43
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 46.3
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 55.44
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 19.0
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 22.7
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 26.46
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 30.65
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 37.99
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 34.29
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 41.52
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 31.11
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 35.97
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 40.84
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 45.16
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 49.38
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 47.0
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 56.8
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 26.38
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 36.09
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 40.0
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 45.31
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 47.9
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 46.75
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 55.95
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 31.71
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 32.59
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 35.79
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 41.67
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 48.47
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 43.56
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 56.14
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 35.05
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 39.59
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 43.25
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 45.87
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 49.95
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 47.89
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 56.66
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 29.03
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 31.79
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 37.92
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 42.04
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 47.38
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 42.01
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2022-2023",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 49.68
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 31.96
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 36.98
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 42.14
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 44.16
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 49.46
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 47.58
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 55.93
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 63.64
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 19.22
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 23.63
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 27.58
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 30.81
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 36.73
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 36.54
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 43.65
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 50.49
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 30.64
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 35.6
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 41.69
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 43.74
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 48.72
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 47.15
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 56.07
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 63.98
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 29.39
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 40.55
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 45.1
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 48.95
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 51.36
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 50.86
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 58.43
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 64.74
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 30.19
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 33.01
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 39.72
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 43.29
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 49.31
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 47.76
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 58.2
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 65.02
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 37.42
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 42.51
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 45.78
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 45.06
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 50.39
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 50.11
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 57.4
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 66.09
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 30.78
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 31.54
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 37.9
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 39.62
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 46.68
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 42.53
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 50.25
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2021-2022",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 58.0
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 29.83
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 35.43
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 41.0
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 41.81
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 48.3
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 45.83
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 54.97
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 62.76
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 67.95
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 15.87
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 20.95
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 25.47
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 26.5
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 34.39
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 33.56
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 44.14
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 48.76
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 57.11
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 29.44
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 34.79
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 40.38
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 40.9
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 47.64
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 45.42
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 55.61
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 62.8
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 68.29
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 29.61
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 41.12
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 45.82
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 48.63
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 52.87
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 53.11
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 62.35
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 67.82
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 71.43
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 26.81
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 29.79
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 35.01
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 36.18
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 44.73
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 40.77
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 53.03
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 62.4
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 66.7
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 35.48
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 41.55
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 45.96
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 44.71
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 50.37
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 49.78
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 55.28
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 65.23
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 69.87
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 26.62
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 29.26
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 36.24
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 37.23
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 44.24
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 39.51
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 48.91
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 56.71
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2020-2021",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 62.38
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 21.46
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 27.33
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 31.78
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 31.95
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 39.1
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 39.22
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 52.65
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 58.66
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 65.99
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 9.74
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 13.32
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 17.16
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 19.93
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 26.45
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 29.31
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 41.73
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 47.72
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 55.32
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 17.36
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 23.25
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 27.25
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 27.79
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 34.99
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 34.84
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 51.54
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 58.98
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 65.84
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 18.32
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 25.22
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 31.09
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 33.43
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 38.6
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 39.03
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 54.28
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 62.14
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 67.1
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 24.75
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 28.1
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 33.44
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 32.75
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 39.7
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 41.38
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 54.78
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 60.3
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 65.76
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 29.77
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 38.5
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 42.93
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 40.94
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 46.1
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 47.27
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 57.25
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 58.44
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 68.97
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 18.46
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 21.52
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 25.75
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 26.55
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 35.6
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 34.21
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 46.77
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 54.03
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2019-2020",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 61.2
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 28.64
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 35.39
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 41.26
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 35.25
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 37.76
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 40.44
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 53.71
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 61.65
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "TOTAL",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 66.2
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 14.6
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 20.15
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 25.4
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 19.01
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 20.84
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 22.59
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 36.05
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 49.2
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "ARTES, HUMANIDADES Y LENGUAS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 55.29
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 26.66
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 34.08
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 40.41
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 33.96
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 35.04
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 37.85
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 52.37
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 61.0
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "NEGOCIOS, ADMINISTRACIÓN Y DERECHO",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 65.08
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 23.15
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 35.35
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 40.85
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 40.11
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 40.97
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 42.37
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 54.49
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 63.41
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES (TIC)",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 69.26
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 24.51
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 31.0
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 35.79
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 31.25
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 39.19
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 41.46
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 56.58
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 63.71
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "AGRICULTURA, GANADERÍA, PESCA, SILVICULTURA Y VETERINARIA",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 68.12
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 35.81
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 41.7
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 46.33
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 41.01
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 44.09
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 49.16
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 60.27
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 64.59
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "SALUD Y SERVICIOS SOCIALES",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 67.9
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso ",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 29.14
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 30.49
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 1",
+    "trimestre": "4º Trimestre",
+    "tasaInsercion": 37.94
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "1er Trimestre",
+    "tasaInsercion": 30.4
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 2",
+    "trimestre": "2º Trimestre",
+    "tasaInsercion": 32.11
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 33.29
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso + 3",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 46.97
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 56.12
+  },
+  {
+    "cursoAcademicoEgreso": "Curso 2018-2019",
+    "familiaProfesionalIECA": "SERVICIOS",
+    "sexo": "Ambos sexos",
+    "modeloFP": "TOTAL",
+    "medida": "Tasa de inserción laboral total",
+    "tiempoDesdeEgreso": "Año de egreso  + 4",
+    "trimestre": "3er Trimestre",
+    "tasaInsercion": 61.69
+  }
+]
