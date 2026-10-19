@@ -23,7 +23,7 @@ export class AsistenteChatComponent {
   mensajes: MensajeChat[] = [
     {
       role: 'assistant',
-      content: 'Hola, soy el asistente de OrientaLab. ¿En qué puedo ayudarte con tu búsqueda de empleo o formación?'
+      content: 'Hola, soy el asistente de FpMatch. ¿En qué puedo ayudarte con tu búsqueda de empleo o formación?'
     }
   ];
 

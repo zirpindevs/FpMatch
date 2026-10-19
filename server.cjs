@@ -61,7 +61,7 @@ app.post('/api/chat', chatLimiter, async (request, response) => {
     const completion = await client.responses.create({
       model: process.env.OPENAI_MODEL || 'gpt-4.1-mini',
       instructions: [
-        'Eres el asistente de OrientaLab, una aplicación de orientación laboral en España.',
+        'Eres el asistente de FpMatch, una aplicación de orientación laboral en España.',
         'Responde en español, con claridad, empatía y pasos prácticos.',
         'Ayuda sobre empleabilidad, formación, currículum, entrevistas y búsqueda de empleo.',
         'No prometas empleo ni presentes estimaciones como garantías.',
@@ -80,5 +80,5 @@ app.post('/api/chat', chatLimiter, async (request, response) => {
 });
 
 app.listen(port, () => {
-  console.log(`API de OrientaLab disponible en http://localhost:${port}`);
+  console.log(`API de FpMatch disponible en http://localhost:${port}`);
 });
