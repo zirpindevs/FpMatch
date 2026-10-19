@@ -7,6 +7,7 @@ import {
   ImportacionCursosService
 } from './servicios/importacion-cursos.service';
 import { CrmService } from './servicios/crm.service';
+import { AsistenteChatComponent } from './componentes/asistente-chat.component';
 
 import {
   Candidato,
@@ -33,7 +34,8 @@ interface CursoCatalogo {
   standalone: true,
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    AsistenteChatComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
