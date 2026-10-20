@@ -6,501 +6,364 @@ import {
   EspecialidadFormativa,
   ImportacionCursosService
 } from './servicios/importacion-cursos.service';
-import { CrmService } from './servicios/crm.service';
-import { AsistenteChatComponent } from './componentes/asistente-chat.component';
 
-import {
-  Candidato,
-  Curso,
-  Recomendacion
-} from './modelos/crm.model';
-
-interface CursoCatalogo {
-  id?: number | string;
-  codigo: string;
-  nombre: string;
+interface PerfilSimulacion {
+  nivelFormativo: string;
   familiaProfesional: string;
-  familiaProfesionalNombre?: string;
-  duracionHoras: number | null;
-  competencias: string[];
-  ocupacionesRelacionadas: string[];
-  requisitos: string[];
-  demandaLaboral: number | null;
-  fuenteDemanda?: string;
+  cualificaciones: string;
+  experiencia: string;
+  horasExperiencia: number;
+}
+
+interface RecomendacionCurso {
+  curso: EspecialidadFormativa;
+  puntuacion: number;
+  coincidencias: string[];
+  motivo: string;
 }
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [
-    CommonModule,
-    FormsModule,
-    AsistenteChatComponent
-  ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [CommonModule, FormsModule],
+  templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit {
+  private readonly palabrasGenericas = new Set([
+    'atencion', 'cliente', 'clientes', 'usuario', 'usuarios',
+    'servicio', 'servicios', 'profesional', 'profesionales',
+    'experiencia', 'trabajo', 'equipo', 'auxiliar', 'basico', 'basica',
+    'curso', 'cursos', 'formacion', 'nivel', 'grado', 'certificado',
+    'certificados', 'conocimientos', 'competencias'
+  ]);
 
-  seccionActual = 'inicio';
+  private readonly equivalenciasCualificacion: Record<string, string[]> = {
+    excel: ['administracion', 'contabilidad'],
+    ofimatica: ['administracion', 'contabilidad'],
+    word: ['administracion', 'ofimatica'],
+    facturacion: ['contabilidad', 'administracion'],
+    nominas: ['administracion', 'recursos humanos'],
+    contable: ['contabilidad', 'administracion'],
+    informatica: ['sistemas', 'microinformaticos', 'comunicaciones'],
+    programacion: ['desarrollo', 'software', 'informatica'],
+    redes: ['sistemas', 'comunicaciones', 'informatica'],
+    ciberseguridad: ['seguridad', 'sistemas', 'informatica'],
+    enfermeria: ['sanidad', 'sanitario', 'cuidados'],
+    sanitario: ['sanidad', 'salud', 'cuidados'],
+    cuidados: ['sanidad', 'sociosanitaria', 'dependencia'],
+    farmacia: ['sanidad', 'farmaceutica'],
+    cocina: ['hosteleria', 'alimentos', 'restauracion'],
+    camarero: ['hosteleria', 'restauracion'],
+    ventas: ['comercio', 'marketing', 'comercial'],
+    comercial: ['comercio', 'marketing', 'ventas'],
+    almacen: ['logistica', 'transporte', 'almacenamiento'],
+    reparto: ['transporte', 'conduccion', 'logistica'],
+    conduccion: ['transporte', 'vehiculos', 'conduccion'],
+    electricidad: ['electrica', 'electrico', 'mantenimiento'],
+    mecanica: ['mecanizado', 'fabricacion', 'mantenimiento'],
+    soldadura: ['fabricacion', 'mecanica', 'metal'],
+    agricultura: ['agraria', 'agricola', 'cultivos'],
+    jardineria: ['agraria', 'jardineria', 'medioambiental'],
+    limpieza: ['limpieza', 'ambiental', 'residuos'],
+    docencia: ['educacion', 'docencia', 'sociocultural'],
+    monitor: ['deportivas', 'sociocultural', 'educacion'],
+    diseno: ['artes', 'grafico', 'diseno'],
+    carpinteria: ['madera', 'mueble', 'carpinteria'],
+    costura: ['textil', 'confeccion', 'piel'],
+    quimica: ['quimica', 'laboratorio'],
+    laboratorio: ['quimica', 'sanidad', 'laboratorio'],
+    construccion: ['edificacion', 'obra', 'construccion'],
+    fontaneria: ['energia', 'agua', 'instalacion'],
+    peluqueria: ['imagen', 'personal', 'peluqueria'],
+    turismo: ['hosteleria', 'turismo', 'alojamiento']
+  };
 
-  candidatos: Candidato[] = [];
-  cursos: Curso[] = [];
+  readonly nivelesFormativos = [
+    'Sin estudios',
+    'Educación primaria',
+    'ESO',
+    'Educación Secundaria para Personas Adultas (ESA/ESPA)',
+    'Formación Profesional Básica',
+    'Certificado profesional nivel 1',
+    'Grado medio',
+    'Bachillerato',
+    'Certificado profesional nivel 2',
+    'Grado superior',
+    'Certificado profesional nivel 3',
+    'Enseñanzas artísticas profesionales',
+    'Enseñanzas deportivas',
+    'Grado universitario',
+    'Máster universitario',
+    'Doctorado',
+    'Otros'
+  ];
 
-  busquedaCandidato = '';
-  busquedaCurso = '';
+  perfil: PerfilSimulacion = {
+    nivelFormativo: '',
+    familiaProfesional: '*',
+    cualificaciones: '',
+    experiencia: '',
+    horasExperiencia: 0
+  };
 
-  candidatoSeleccionado: Candidato | null = null;
-
-  nuevoCandidato: Candidato = this.crearCandidatoVacio();
-
-  nuevoCurso: Curso = this.crearCursoVacio();
-
-  mostrarFormularioCandidato = false;
-  mostrarFormularioCurso = false;
-
-  cursosImportados: EspecialidadFormativa[] = [];
+  cursos: EspecialidadFormativa[] = [];
+  recomendaciones: RecomendacionCurso[] = [];
+  fichaAbiertaCodigo: string | null = null;
   cargandoCursos = false;
   errorCursos = '';
-  paginaActual = 1;
-  readonly cursosPorPagina = 25;
+  simulacionEnviada = false;
 
-  private readonly claveEspecialidadesEliminadas =
-    'orienta_especialidades_eliminadas';
-
-  constructor(
-    private crmService: CrmService,
-    private importacionCursos: ImportacionCursosService
-  ) {
-    this.cargarDatos();
-  }
+  constructor(private importacionCursos: ImportacionCursosService) {}
 
   ngOnInit(): void {
-    this.cargarCursosDesdeJSON();
+    this.cargarCursos();
   }
 
-  cargarDatos(): void {
-    this.candidatos =
-      this.crmService.obtenerCandidatos();
+  get familiasProfesionales(): { codigo: string; nombre: string }[] {
+    const familias = new Map<string, string>();
 
-    this.cursos =
-      this.crmService.obtenerCursos();
+    this.cursos.forEach(curso => {
+      familias.set(curso.familiaProfesional, curso.familiaProfesionalNombre);
+    });
+
+    return Array.from(familias, ([codigo, nombre]) => ({ codigo, nombre }))
+      .sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'));
   }
 
-  cargarCursosDesdeJSON(): void {
+  get empleabilidadMedia(): number {
+    const tasasPorFamilia = new Map<string, number>();
+
+    this.cursos.forEach(curso => {
+      tasasPorFamilia.set(curso.familiaProfesional, curso.demandaLaboral);
+    });
+
+    const tasas = Array.from(tasasPorFamilia.values());
+    return tasas.length
+      ? tasas.reduce((total, tasa) => total + tasa, 0) / tasas.length
+      : 0;
+  }
+
+  get nombreFamiliaSeleccionada(): string {
+    if (this.perfil.familiaProfesional === '*') {
+      return 'Todas las áreas';
+    }
+
+    return this.familiasProfesionales.find(
+      familia => familia.codigo === this.perfil.familiaProfesional
+    )?.nombre || 'Área seleccionada';
+  }
+
+  private cargarCursos(): void {
     this.cargandoCursos = true;
-    this.errorCursos = '';
-
-    this.importacionCursos
-      .cargarEspecialidades()
-      .subscribe({
-        next: (datos) => {
-          const codigosEliminados =
-            this.obtenerCodigosEspecialidadEliminados();
-
-          this.cursosImportados = datos.filter(
-            curso => !codigosEliminados.has(curso.codigo)
-          );
-          this.cargandoCursos = false;
-          this.cambiarPagina(1);
-        },
-        error: (error) => {
-          console.error('Error al cargar los cursos y las tasas IECA:', error);
-
-          this.errorCursos =
-            'No se han podido cargar los cursos y las tasas de inserción.';
-
-          this.cargandoCursos = false;
-        }
-      });
+    this.importacionCursos.cargarEspecialidades().subscribe({
+      next: cursos => {
+        this.cursos = cursos;
+        this.cargandoCursos = false;
+      },
+      error: error => {
+        console.error('No se pudo cargar el catálogo formativo:', error);
+        this.errorCursos = 'No se ha podido cargar el catálogo. Actualiza la página para intentarlo de nuevo.';
+        this.cargandoCursos = false;
+      }
+    });
   }
 
-  private obtenerCodigosEspecialidadEliminados(): Set<string> {
-    return new Set(
-      JSON.parse(
-        localStorage.getItem(this.claveEspecialidadesEliminadas) || '[]'
+  generarItinerario(): void {
+    if (!this.perfil.nivelFormativo || !this.perfil.familiaProfesional) {
+      return;
+    }
+
+    const cursosDisponibles = this.perfil.familiaProfesional === '*'
+      ? this.cursos
+      : this.cursos.filter(
+          curso => curso.familiaProfesional === this.perfil.familiaProfesional
+        );
+
+    const ranking = cursosDisponibles
+      .map(curso => this.puntuarCurso(curso))
+      .sort((a, b) => b.puntuacion - a.puntuacion);
+    const tieneCualificacionEspecifica =
+      this.obtenerTokens(this.perfil.cualificaciones).length > 0 ||
+      this.obtenerTokens(this.perfil.experiencia).length > 0;
+    const nivel = this.normalizar(this.perfil.nivelFormativo);
+    const tieneRequisitoCompatible = cursosDisponibles.some(curso =>
+      this.normalizar(curso.requisitos.join(' ')).includes(nivel)
+    );
+
+    if (
+      this.perfil.familiaProfesional === '*' &&
+      !tieneCualificacionEspecifica &&
+      !tieneRequisitoCompatible
+    ) {
+      const familiasIncluidas = new Set<string>();
+      this.recomendaciones = ranking.filter(recomendacion => {
+        const familia = recomendacion.curso.familiaProfesional;
+        if (familiasIncluidas.has(familia)) {
+          return false;
+        }
+
+        familiasIncluidas.add(familia);
+        return true;
+      }).slice(0, 3);
+    } else {
+      this.recomendaciones = ranking.slice(0, 3);
+    }
+    this.simulacionEnviada = true;
+
+    setTimeout(() => {
+      document.getElementById('itinerario')?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  }
+
+  obtenerUrlDescripcion(curso: EspecialidadFormativa): string {
+    if (curso.fuentesOficiales?.fichaEspecialidad) {
+      return curso.fuentesOficiales.fichaEspecialidad;
+    }
+
+    return 'https://www.juntadeandalucia.es/empleoformacionytrabajoautonomo/' +
+      'formacion/web/fichero-de-especialidades-formativas/' +
+      encodeURIComponent(curso.codigo);
+  }
+
+  alternarFicha(codigo: string): void {
+    this.fichaAbiertaCodigo = this.fichaAbiertaCodigo === codigo ? null : codigo;
+  }
+
+  obtenerEstadoConvocatoria(convocatoria: {
+    estado: string;
+    fechaFinSolicitud: string | null;
+  }): string {
+    const fechaFin = convocatoria.fechaFinSolicitud;
+    if (fechaFin) {
+      const fechaLimite = new Date(`${fechaFin}T00:00:00`);
+      const hoy = new Date();
+      hoy.setHours(0, 0, 0, 0);
+
+      if (!Number.isNaN(fechaLimite.getTime()) && fechaLimite < hoy) {
+        return 'Plazo finalizado';
+      }
+    }
+
+    return convocatoria.estado || 'Estado no indicado';
+  }
+
+  convocatoriaEnPlazo(convocatoria: {
+    estado: string;
+    fechaFinSolicitud: string | null;
+  }): boolean {
+    return this.obtenerEstadoConvocatoria(convocatoria)
+      .toLowerCase()
+      .includes('en plazo');
+  }
+
+  obtenerEstadoInvestigacion(estado?: string): string {
+    if (!estado) {
+      return 'Estado de consulta no indicado';
+    }
+
+    const etiquetas: Record<string, string> = {
+      consulta_parcial_datos_oficiales: 'Consulta parcial de datos oficiales',
+      consulta_completa_datos_oficiales: 'Consulta completa de datos oficiales'
+    };
+
+    return etiquetas[estado] || estado.replaceAll('_', ' ');
+  }
+
+  private puntuarCurso(curso: EspecialidadFormativa): RecomendacionCurso {
+    const tokensCurso = new Set(this.obtenerTokens([
+      curso.nombre,
+      curso.familiaProfesionalNombre,
+      ...curso.ocupacionesRelacionadas,
+      ...curso.competencias
+    ].join(' ')));
+    const tokensCualificacion = this.obtenerTokens(this.perfil.cualificaciones);
+    const tokensExperiencia = this.obtenerTokens(this.perfil.experiencia);
+    const coincidenciasCualificacion = tokensCualificacion.filter(token =>
+      this.coincideCualificacion(token, tokensCurso)
+    );
+    const coincidenciasExperiencia = tokensExperiencia.filter(token =>
+      this.coincideToken(token, tokensCurso)
+    );
+    const coincidencias = Array.from(new Set([
+      ...coincidenciasCualificacion,
+      ...coincidenciasExperiencia
+    ])).slice(0, 3);
+
+    const puntosCualificacion = Math.min(100, coincidenciasCualificacion.length * 40);
+    const puntosExperiencia = coincidenciasExperiencia.length
+      ? Math.min(100, coincidenciasExperiencia.length * 35 +
+        Math.min(Number(this.perfil.horasExperiencia) || 0, 1000) / 1000 * 30)
+      : 0;
+    const requisitos = this.normalizar(curso.requisitos.join(' '));
+    const nivel = this.normalizar(this.perfil.nivelFormativo);
+    const tieneRequisitosFormativos = requisitos.length > 0;
+    const puntosFormacion = tieneRequisitosFormativos
+      ? requisitos.includes(nivel) ? 100 : 0
+      : 0;
+    const pesosActivos =
+      (tokensCualificacion.length ? 0.55 : 0) +
+      (tokensExperiencia.length ? 0.25 : 0) +
+      (tieneRequisitosFormativos ? 0.20 : 0);
+    const afinidad = pesosActivos
+      ? (
+          puntosCualificacion * (tokensCualificacion.length ? 0.55 : 0) +
+          puntosExperiencia * (tokensExperiencia.length ? 0.25 : 0) +
+          puntosFormacion * (tieneRequisitosFormativos ? 0.20 : 0)
+        ) / pesosActivos
+      : 0;
+    const tasa = curso.demandaLaboral ?? this.empleabilidadMedia;
+    const puntuacion = Math.round(
+      pesosActivos ? tasa * 0.35 + afinidad * 0.65 : tasa
+    );
+
+    let motivo = 'Sector con oportunidades de inserción laboral según los datos disponibles.';
+    if (coincidencias.length && puntosExperiencia > 0) {
+      motivo = `Relaciona tu formación y experiencia con: ${coincidencias.join(', ')}.`;
+    } else if (coincidencias.length) {
+      motivo = `Coincide con cualificaciones de tu perfil: ${coincidencias.join(', ')}.`;
+    } else if (puntosExperiencia > 0) {
+      motivo = `Aprovecha experiencia profesional relacionada: ${coincidenciasExperiencia.join(', ')}.`;
+    } else if (tieneRequisitosFormativos && puntosFormacion > 0) {
+      motivo = `Tu formación actual cumple los requisitos indicados: ${curso.requisitos.join(', ')}.`;
+    }
+
+    return { curso, puntuacion, coincidencias, motivo };
+  }
+
+  private obtenerTokens(texto: string): string[] {
+    return Array.from(new Set(
+      this.normalizar(texto)
+        .split(/[^a-z0-9]+/)
+        .filter(token => token.length > 3 && !this.palabrasGenericas.has(token))
+    ));
+  }
+
+  private coincideCualificacion(token: string, tokensCurso: Set<string>): boolean {
+    if (this.coincideToken(token, tokensCurso)) {
+      return true;
+    }
+
+    return (this.equivalenciasCualificacion[token] || []).some(equivalencia =>
+      this.obtenerTokens(equivalencia).some(termino =>
+        this.coincideToken(termino, tokensCurso)
       )
     );
   }
 
-  get catalogoCursos(): CursoCatalogo[] {
-    const catalogo = new Map<string, CursoCatalogo>();
-    const especialidadesPorCodigo = new Map(
-      this.cursosImportados.map(especialidad => [
-        especialidad.codigo,
-        especialidad
-      ])
-    );
-
-    this.cursosImportados.forEach(curso => {
-      catalogo.set(curso.codigo, curso);
-    });
-
-    this.cursos.forEach(curso => {
-      const especialidad = especialidadesPorCodigo.get(curso.codigo);
-
-      catalogo.set(
-        curso.codigo,
-        especialidad
-          ? {
-              ...curso,
-              familiaProfesional:
-                especialidad.familiaProfesionalNombre ||
-                curso.familiaProfesional,
-              familiaProfesionalNombre:
-                especialidad.familiaProfesionalNombre,
-              demandaLaboral: especialidad.demandaLaboral,
-              fuenteDemanda: especialidad.fuenteDemanda
-            }
-          : curso
-      );
-    });
-
-    return Array.from(catalogo.values());
-  }
-
-  cambiarSeccion(seccion: string): void {
-    this.seccionActual = seccion;
-    this.candidatoSeleccionado = null;
-  }
-
-  crearCandidatoVacio(): Candidato {
-    return {
-      id: 0,
-      nombre: '',
-      apellidos: '',
-      email: '',
-      telefono: '',
-      situacionLaboral: 'Desempleado',
-      nivelFormativo: '',
-      experiencia: '',
-      competencias: [],
-      interesesProfesionales: [],
-      provincia: '',
-      observaciones: ''
-    };
-  }
-
-  crearCursoVacio(): Curso {
-    return {
-      id: 0,
-      codigo: '',
-      nombre: '',
-      familiaProfesional: '',
-      duracionHoras: 0,
-      competencias: [],
-      ocupacionesRelacionadas: [],
-      requisitos: [],
-      demandaLaboral: 50
-    };
-  }
-
-  get candidatosFiltrados(): Candidato[] {
-    const busqueda =
-      this.busquedaCandidato.toLowerCase().trim();
-
-    return this.candidatos.filter(candidato => {
-      const texto = [
-        candidato.nombre,
-        candidato.apellidos,
-        candidato.provincia,
-        candidato.experiencia,
-        candidato.situacionLaboral
-      ].join(' ').toLowerCase();
-
-      return texto.includes(busqueda);
-    });
-  }
-
-  get cursosFiltrados(): CursoCatalogo[] {
-    const busqueda =
-      this.busquedaCurso.toLowerCase().trim();
-
-    return this.catalogoCursos.filter(curso => {
-      const texto = [
-        curso.codigo,
-        curso.nombre,
-        curso.familiaProfesional,
-        ...curso.ocupacionesRelacionadas
-      ].join(' ').toLowerCase();
-
-      return texto.includes(busqueda);
-    });
-  }
-
-  get cursosPaginados(): CursoCatalogo[] {
-    const inicio = (this.paginaActual - 1) * this.cursosPorPagina;
-
-    return this.cursosFiltrados.slice(
-      inicio,
-      inicio + this.cursosPorPagina
+  private coincideToken(token: string, tokensCurso: Set<string>): boolean {
+    return Array.from(tokensCurso).some(tokenCurso =>
+      token === tokenCurso ||
+      (token.length >= 6 && tokenCurso.length >= 6 &&
+        (token.includes(tokenCurso) || tokenCurso.includes(token)))
     );
   }
 
-  get totalPaginas(): number {
-    return Math.max(
-      1,
-      Math.ceil(this.cursosFiltrados.length / this.cursosPorPagina)
-    );
+  private normalizar(texto: string): string {
+    return texto.toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '');
   }
-
-  cambiarPagina(pagina: number): void {
-    this.paginaActual = Math.min(
-      Math.max(1, pagina),
-      this.totalPaginas
-    );
-  }
-
-  get candidatosDesempleados(): number {
-    return this.candidatos.filter(
-      c => c.situacionLaboral === 'Desempleado'
-    ).length;
-  }
-
-  get cursosConDemandaAlta(): number {
-    return this.cursos.filter(
-      c => c.demandaLaboral >= 75
-    ).length;
-  }
-
-  guardarCandidato(): void {
-    if (
-      !this.nuevoCandidato.nombre.trim() ||
-      !this.nuevoCandidato.apellidos.trim()
-    ) {
-      alert('Introduce el nombre y los apellidos.');
-      return;
-    }
-
-    this.crmService.agregarCandidato({
-      ...this.nuevoCandidato,
-      competencias: [...this.nuevoCandidato.competencias],
-      interesesProfesionales: [
-        ...this.nuevoCandidato.interesesProfesionales
-      ]
-    });
-
-    this.cargarDatos();
-
-    this.nuevoCandidato = this.crearCandidatoVacio();
-
-    this.mostrarFormularioCandidato = false;
-  }
-
-  guardarCurso(): void {
-    if (
-      !this.nuevoCurso.nombre.trim() ||
-      !this.nuevoCurso.codigo.trim()
-    ) {
-      alert('Introduce el nombre y el código del curso.');
-      return;
-    }
-
-    this.crmService.agregarCurso({
-      ...this.nuevoCurso,
-      competencias: [...this.nuevoCurso.competencias],
-      ocupacionesRelacionadas: [
-        ...this.nuevoCurso.ocupacionesRelacionadas
-      ],
-      requisitos: [...this.nuevoCurso.requisitos]
-    });
-
-    this.cargarDatos();
-
-    this.nuevoCurso = this.crearCursoVacio();
-
-    this.mostrarFormularioCurso = false;
-  }
-
-  eliminarCandidato(candidato: Candidato): void {
-    const confirmar = confirm(
-      `¿Quieres eliminar a ${candidato.nombre} ${candidato.apellidos}?`
-    );
-
-    if (!confirmar) {
-      return;
-    }
-
-    this.crmService.eliminarCandidato(candidato.id);
-
-    this.cargarDatos();
-
-    this.candidatoSeleccionado = null;
-  }
-
-  eliminarCurso(curso: CursoCatalogo): void {
-    const confirmar = confirm(
-      `¿Quieres eliminar el curso "${curso.nombre}"?`
-    );
-
-    if (!confirmar) {
-      return;
-    }
-
-    const cursoGuardado = this.cursos.find(
-      existente => existente.codigo === curso.codigo
-    );
-
-    if (cursoGuardado) {
-      this.crmService.eliminarCurso(cursoGuardado.id);
-    }
-
-    if (this.cursosImportados.some(
-      especialidad => especialidad.codigo === curso.codigo
-    )) {
-      const codigosEliminados =
-        this.obtenerCodigosEspecialidadEliminados();
-
-      codigosEliminados.add(curso.codigo);
-
-      localStorage.setItem(
-        this.claveEspecialidadesEliminadas,
-        JSON.stringify(Array.from(codigosEliminados))
-      );
-
-      this.cursosImportados = this.cursosImportados.filter(
-        especialidad => especialidad.codigo !== curso.codigo
-      );
-    }
-
-    this.cargarDatos();
-    this.cambiarPagina(this.paginaActual);
-  }
-
-  abrirFicha(candidato: Candidato): void {
-    this.candidatoSeleccionado = candidato;
-    this.seccionActual = 'ficha';
-  }
-
-  seleccionarCandidato(id: string): void {
-    this.candidatoSeleccionado = this.candidatos.find(
-      candidato => candidato.id === Number(id)
-    ) || null;
-  }
-
-  obtenerRecomendaciones(
-    candidato: Candidato
-  ): Recomendacion[] {
-
-    return this.cursos
-      .map(curso => {
-
-        const competenciasCandidato =
-          candidato.competencias.map(c =>
-            c.toLowerCase()
-          );
-
-        const interesesCandidato =
-          candidato.interesesProfesionales.map(i =>
-            i.toLowerCase()
-          );
-
-        const competenciasCoincidentes =
-          curso.competencias.filter(competencia =>
-            competenciasCandidato.some(c =>
-              c.includes(competencia.toLowerCase()) ||
-              competencia.toLowerCase().includes(c)
-            )
-          ).length;
-
-        const interesesCoincidentes =
-          interesesCandidato.some(interes =>
-            curso.familiaProfesional
-              .toLowerCase()
-              .includes(interes)
-          ) ||
-          curso.ocupacionesRelacionadas.some(ocupacion =>
-            interesesCandidato.some(interes =>
-              ocupacion.toLowerCase().includes(interes)
-            )
-          );
-
-        const puntuacionCompetencias =
-          curso.competencias.length > 0
-            ? Math.min(
-                100,
-                competenciasCoincidentes /
-                curso.competencias.length * 100
-              )
-            : 0;
-
-        const puntuacionIntereses =
-          interesesCoincidentes ? 100 : 0;
-
-        const puntuacion =
-          curso.demandaLaboral * 0.30 +
-          puntuacionCompetencias * 0.35 +
-          puntuacionIntereses * 0.35;
-
-        const motivo = interesesCoincidentes
-          ? 'Coincide con sus intereses profesionales.'
-          : competenciasCoincidentes > 0
-            ? 'Aprovecha algunas de sus competencias actuales.'
-            : 'Puede ampliar sus opciones profesionales; conviene revisar su encaje.';
-
-        return {
-          candidatoId: candidato.id,
-          cursoId: curso.id,
-          puntuacion: Math.round(puntuacion),
-          motivo
-        };
-      })
-      .sort((a, b) => b.puntuacion - a.puntuacion);
-  }
-
-  obtenerCursoPorId(id: number): Curso | undefined {
-    return this.cursos.find(curso => curso.id === id);
-  }
-
-  obtenerNivelRecomendacion(puntuacion: number): string {
-    if (puntuacion >= 75) {
-      return 'Alta';
-    }
-
-    if (puntuacion >= 50) {
-      return 'Media';
-    }
-
-    return 'Baja';
-  }
-
-  importarCatalogo(): void {
-
-  this.importacionCursos
-    .cargarEspecialidades()
-    .subscribe({
-      next: (especialidades) => {
-
-        const codigosEliminados =
-          this.obtenerCodigosEspecialidadEliminados();
-
-        const cantidad =
-          this.crmService.importarEspecialidades(
-            especialidades.filter(
-              especialidad => !codigosEliminados.has(especialidad.codigo)
-            )
-          );
-
-        this.cargarDatos();
-        this.cambiarPagina(this.paginaActual);
-
-        alert(
-          `Importación completada. ` +
-          `Se han añadido ${cantidad} especialidades nuevas.`
-        );
-      },
-
-      error: (error) => {
-        console.error(
-          'Error al importar las especialidades',
-          error
-        );
-
-        alert(
-          'No se ha podido cargar el catálogo formativo.'
-        );
-      }
-    });
-}
-
 }

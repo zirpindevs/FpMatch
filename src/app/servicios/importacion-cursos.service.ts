@@ -2,6 +2,31 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { forkJoin, map, Observable } from 'rxjs';
 
+export interface CentroAutorizado {
+  nombre: string;
+  codigoCentro: string;
+  municipio: string;
+  provincia: string;
+  urlFuente: string;
+}
+
+export interface ConvocatoriaCurso {
+  nombre: string;
+  estado: string;
+  horas: number | null;
+  fechaFinSolicitud: string | null;
+  inicioPrevisto: string | null;
+  ubicacion: string | null;
+  expediente: string;
+  urlFuente: string;
+}
+
+export interface FuentesOficiales {
+  fichaEspecialidad?: string;
+  buscadorCentros?: string;
+  buscadorCursos?: string;
+}
+
 export interface EspecialidadFormativa {
   id: string;
   codigo: string;
@@ -9,11 +34,19 @@ export interface EspecialidadFormativa {
   familiaProfesional: string;
   familiaProfesionalNombre: string;
   duracionHoras: number | null;
+  horasTeoricas?: number | null;
+  horasPracticas?: number | null;
   certificado: string;
   centros: string;
   competencias: string[];
   ocupacionesRelacionadas: string[];
   requisitos: string[];
+  centrosAutorizados?: CentroAutorizado[];
+  cursosConvocados?: ConvocatoriaCurso[];
+  fuentesOficiales?: FuentesOficiales;
+  fechaConsulta?: string;
+  estadoInvestigacion?: string;
+  notaHoras?: string | null;
   demandaLaboral: number;
   fuenteDemanda: string;
 }

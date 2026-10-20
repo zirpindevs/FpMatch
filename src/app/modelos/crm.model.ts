@@ -12,6 +12,7 @@ export interface Candidato {
 
   nivelFormativo: string;
   experiencia: string;
+  horasExperiencia?: number;
   competencias: string[];
   interesesProfesionales: string[];
   provincia: string;

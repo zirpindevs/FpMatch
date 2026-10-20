@@ -1,882 +1,251 @@
-<div class="aplicacion">
+<main class="simulator-page">
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="FpMatch, inicio">
+      <span class="brand-mark" aria-hidden="true">F</span>
+      <span>fp<span class="brand-light">match</span></span>
+    </a>
+    <div class="topbar-note"><span class="live-dot"></span> Orientación basada en datos</div>
+    <span class="privacy-note">Sin registro <span>·</span> Tus datos no se guardan</span>
+  </header>
 
-  <!-- MENÚ LATERAL -->
+  <section class="hero" id="inicio">
+    <div class="hero-copy">
+      <p class="eyebrow"><span>01</span> TU SIGUIENTE PASO PROFESIONAL</p>
+      <h1>La formación adecuada puede <em>cambiar el rumbo.</em></h1>
+      <p class="hero-description">
+        Cuéntanos qué sabes hacer. Te proponemos un itinerario formativo
+        conectado con la empleabilidad de cada sector.
+      </p>
+      <div class="hero-footnote"><span class="hero-line"></span> Un punto de partida claro, construido contigo.</div>
+    </div>
+    <div class="hero-image" role="img" aria-label="Estudiantes colaborando en un espacio de formación">
+      <div class="image-caption">
+        <span class="caption-kicker">FORMACIÓN CON PROPÓSITO</span>
+        <strong>Aprender abre<br>nuevos caminos.</strong>
+      </div>
+      <div class="image-index">FP <span>/</span> EMPLEO</div>
+    </div>
+  </section>
 
-  <aside class="menu-lateral">
-
-    <div class="marca">
-      <div class="marca-icono">FPM</div>
-
+  <section class="simulator-section" aria-labelledby="simulator-title">
+    <div class="section-heading">
       <div>
-        <h2>FpMatch</h2>
-        <span>Orientación laboral</span>
+        <p class="eyebrow"><span>02</span> SIMULADOR DE ITINERARIO</p>
+        <h2 id="simulator-title">Empecemos por tu experiencia</h2>
       </div>
+      <span class="step-count">01 <span>—</span> 03</span>
     </div>
 
-    <div class="menu-titulo">
-      MENÚ PRINCIPAL
-    </div>
-
-    <nav>
-      <button
-        [class.activo]="seccionActual === 'inicio'"
-        (click)="cambiarSeccion('inicio')">
-        <span>⌂</span> Inicio
-      </button>
-
-      <button
-        [class.activo]="seccionActual === 'candidatos'"
-        (click)="cambiarSeccion('candidatos')">
-        <span>♙</span> Candidatos
-      </button>
-
-      <button
-        [class.activo]="seccionActual === 'cursos'"
-        (click)="cambiarSeccion('cursos')">
-        <span>▤</span> Cursos formativos
-      </button>
-
-      <button
-        [class.activo]="seccionActual === 'recomendaciones'"
-        (click)="cambiarSeccion('recomendaciones')">
-        <span>✦</span> Recomendaciones
-      </button>
-    </nav>
-
-    <div class="menu-inferior">
-      <span class="estado-punto"></span>
-      Aplicación en desarrollo
-    </div>
-
-  </aside>
-
-  <!-- CONTENIDO PRINCIPAL -->
-
-  <main class="contenido">
-
-    <header class="barra-superior">
-
-      <div>
-        <span class="texto-secundario">
-          CRM DE ORIENTACIÓN
-        </span>
-
-        <h1>
-          {{
-            seccionActual === 'inicio' ? 'Panel de control' :
-            seccionActual === 'candidatos' ? 'Candidatos' :
-            seccionActual === 'cursos' ? 'Cursos formativos' :
-            seccionActual === 'recomendaciones' ? 'Recomendaciones' :
-            'Ficha del candidato'
-          }}
-        </h1>
-      </div>
-
-      <div class="usuario">
-        <div class="avatar">OR</div>
-
-        <div>
-          <strong>Orientador laboral</strong>
-          <span>Área de orientación</span>
+    <div class="simulator-layout">
+      <form class="profile-form" (ngSubmit)="generarItinerario()">
+        <div class="form-section-title">
+          <span class="section-number">A</span>
+          <div><h3>Tu punto de partida</h3><p>Selecciona tu formación actual y el área que te interesa.</p></div>
         </div>
-      </div>
-
-    </header>
-
-    <!-- INICIO -->
-
-    <section *ngIf="seccionActual === 'inicio'">
-
-      <div class="bienvenida">
-        <div>
-          <span class="etiqueta">RESUMEN GENERAL</span>
-
-          <h2>Bienvenido a FpMatch</h2>
-
-          <p>
-            Gestiona candidatos, descubre oportunidades
-            formativas y prepara planes de inserción laboral.
-          </p>
-        </div>
-
-        <div class="bienvenida-icono">✦</div>
-      </div>
-
-      <div class="rejilla-estadisticas">
-
-        <article class="tarjeta-estadistica">
-          <div class="estadistica-icono azul">♙</div>
-          <span>Candidatos registrados</span>
-          <strong>{{ candidatos.length }}</strong>
-          <small>Personas en seguimiento</small>
-        </article>
-
-        <article class="tarjeta-estadistica">
-          <div class="estadistica-icono verde">↗</div>
-          <span>Candidatos desempleados</span>
-          <strong>{{ candidatosDesempleados }}</strong>
-          <small>Según los datos registrados</small>
-        </article>
-
-        <article class="tarjeta-estadistica">
-          <div class="estadistica-icono violeta">▤</div>
-          <span>Cursos disponibles</span>
-          <strong>{{ cursos.length }}</strong>
-          <small>En el catálogo local</small>
-        </article>
-
-        <article class="tarjeta-estadistica">
-          <div class="estadistica-icono naranja">★</div>
-          <span>Cursos con demanda alta</span>
-          <strong>{{ cursosConDemandaAlta }}</strong>
-          <small>Según puntuaciones de ejemplo</small>
-        </article>
-
-      </div>
-
-      <div class="rejilla-paneles">
-
-        <article class="panel">
-
-          <div class="panel-cabecera">
-            <div>
-              <h3>Últimos candidatos</h3>
-              <p>Personas registradas en el CRM</p>
-            </div>
-
-            <button
-              class="boton-secundario"
-              (click)="cambiarSeccion('candidatos')">
-              Ver todos
-            </button>
-          </div>
-
-          <div class="tabla-contenedor">
-
-            <table>
-              <thead>
-                <tr>
-                  <th>Nombre</th>
-                  <th>Situación laboral</th>
-                  <th>Provincia</th>
-                  <th></th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr *ngFor="let candidato of candidatos.slice(0, 5)">
-                  <td>
-                    <strong>
-                      {{ candidato.nombre }}
-                      {{ candidato.apellidos }}
-                    </strong>
-                  </td>
-
-                  <td>
-                    <span class="etiqueta-estado">
-                      {{ candidato.situacionLaboral }}
-                    </span>
-                  </td>
-
-                  <td>{{ candidato.provincia }}</td>
-
-                  <td>
-                    <button
-                      class="boton-enlace"
-                      (click)="abrirFicha(candidato)">
-                      Ver ficha
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-          </div>
-
-        </article>
-
-        <article class="panel">
-
-          <div class="panel-cabecera">
-            <div>
-              <h3>Catálogo formativo</h3>
-              <p>Resumen de los cursos registrados</p>
-            </div>
-          </div>
-
-          <div
-            class="curso-resumen"
-            *ngFor="let curso of cursos.slice(0, 4)">
-
-            <div class="curso-icono">▤</div>
-
-            <div class="curso-resumen-texto">
-              <strong>{{ curso.nombre }}</strong>
-
-              <span>
-                {{ curso.familiaProfesional }}
-              </span>
-
-              <small>
-                {{ curso.duracionHoras }} horas
-              </small>
-            </div>
-
-          </div>
-
-        </article>
-
-      </div>
-
-    </section>
-
-    <!-- CANDIDATOS -->
-
-    <section *ngIf="seccionActual === 'candidatos'">
-
-      <div class="cabecera-seccion">
-
-        <div>
-          <h2>Gestión de candidatos</h2>
-          <p>
-            Consulta y administra los perfiles de las personas.
-          </p>
-        </div>
-
-        <button
-          class="boton-principal"
-          (click)="mostrarFormularioCandidato = !mostrarFormularioCandidato">
-          + Nuevo candidato
-        </button>
-
-      </div>
-
-      <article
-        class="panel formulario"
-        *ngIf="mostrarFormularioCandidato">
-
-        <h3>Registrar candidato</h3>
-
-        <form (ngSubmit)="guardarCandidato()">
-
-          <div class="rejilla-formulario">
-
-            <label>
-              Nombre
-              <input
-                name="nombre"
-                [(ngModel)]="nuevoCandidato.nombre"
-                required>
-            </label>
-
-            <label>
-              Apellidos
-              <input
-                name="apellidos"
-                [(ngModel)]="nuevoCandidato.apellidos"
-                required>
-            </label>
-
-            <label>
-              Correo electrónico
-              <input
-                type="email"
-                name="email"
-                [(ngModel)]="nuevoCandidato.email">
-            </label>
-
-            <label>
-              Teléfono
-              <input
-                name="telefono"
-                [(ngModel)]="nuevoCandidato.telefono">
-            </label>
-
-            <label>
-              Situación laboral
-              <select
-                name="situacionLaboral"
-                [(ngModel)]="nuevoCandidato.situacionLaboral">
-
-                <option value="Desempleado">Desempleado</option>
-                <option value="Trabajando">Trabajando</option>
-                <option value="Estudiando">Estudiando</option>
-
-              </select>
-            </label>
-
-            <label>
-              Nivel formativo
-              <input
-                name="nivelFormativo"
-                [(ngModel)]="nuevoCandidato.nivelFormativo">
-            </label>
-
-            <label>
-              Experiencia profesional
-              <input
-                name="experiencia"
-                [(ngModel)]="nuevoCandidato.experiencia">
-            </label>
-
-            <label>
-              Provincia
-              <input
-                name="provincia"
-                [(ngModel)]="nuevoCandidato.provincia">
-            </label>
-
-          </div>
-
-          <label>
-            Observaciones
-            <textarea
-              name="observaciones"
-              [(ngModel)]="nuevoCandidato.observaciones"
-              rows="3">
-            </textarea>
+        <div class="form-grid">
+          <label class="field">
+            <span>Nivel formativo</span>
+            <select name="nivelFormativo" [(ngModel)]="perfil.nivelFormativo" required>
+              <option value="" disabled>Elige tu nivel formativo</option>
+              <option *ngFor="let nivel of nivelesFormativos" [value]="nivel">{{ nivel }}</option>
+            </select>
           </label>
-
-          <div class="acciones-formulario">
-            <button
-              type="button"
-              class="boton-secundario"
-              (click)="mostrarFormularioCandidato = false">
-              Cancelar
-            </button>
-
-            <button
-              type="submit"
-              class="boton-principal">
-              Guardar candidato
-            </button>
-          </div>
-
-        </form>
-
-      </article>
-
-      <article class="panel">
-
-        <div class="busqueda">
-          <input
-            [(ngModel)]="busquedaCandidato"
-            placeholder="Buscar por nombre, experiencia o provincia...">
+          <label class="field">
+            <span>Área profesional que te atrae</span>
+            <select name="familiaProfesional" [(ngModel)]="perfil.familiaProfesional" required>
+              <option value="" disabled>Elige un sector</option>
+              <option value="*">Todas las áreas</option>
+              <option *ngFor="let familia of familiasProfesionales" [value]="familia.codigo">{{ familia.nombre }}</option>
+            </select>
+          </label>
         </div>
 
-        <div class="tabla-contenedor">
-
-          <table>
-            <thead>
-              <tr>
-                <th>Candidato</th>
-                <th>Situación laboral</th>
-                <th>Formación</th>
-                <th>Experiencia</th>
-                <th>Provincia</th>
-                <th>Acciones</th>
-              </tr>
-            </thead>
-
-            <tbody>
-
-              <tr *ngFor="let candidato of candidatosFiltrados">
-
-                <td>
-                  <strong>
-                    {{ candidato.nombre }}
-                    {{ candidato.apellidos }}
-                  </strong>
-
-                  <small class="texto-secundario">
-                    {{ candidato.email }}
-                  </small>
-                </td>
-
-                <td>{{ candidato.situacionLaboral }}</td>
-                <td>{{ candidato.nivelFormativo }}</td>
-                <td>{{ candidato.experiencia }}</td>
-                <td>{{ candidato.provincia }}</td>
-
-                <td>
-                  <div class="acciones-tabla">
-
-                    <button
-                      class="boton-enlace"
-                      (click)="abrirFicha(candidato)">
-                      Ver
-                    </button>
-
-                    <button
-                      class="boton-peligro"
-                      (click)="eliminarCandidato(candidato)">
-                      Eliminar
-                    </button>
-
-                  </div>
-                </td>
-
-              </tr>
-
-              <tr *ngIf="candidatosFiltrados.length === 0">
-                <td colspan="6">
-                  No se han encontrado candidatos.
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
-
+        <div class="form-section-title form-section-secondary">
+          <span class="section-number">B</span>
+          <div><h3>Lo que ya sabes hacer</h3><p>Incluye habilidades, certificados o conocimientos relevantes.</p></div>
         </div>
-
-      </article>
-
-    </section>
-
-    <!-- CURSOS -->
-
-    <section *ngIf="seccionActual === 'cursos'">
-
-      <div class="cabecera-seccion">
-
-        <div>
-          <h2>Catálogo de cursos</h2>
-          <p>
-            Formación relacionada con las necesidades del mercado laboral.
-          </p>
-        </div>
-
-        <button
-          class="boton-principal"
-          (click)="mostrarFormularioCurso = !mostrarFormularioCurso">
-          + Nuevo curso
-        </button>
-
-        <button
-          class="boton-secundario"
-          (click)="importarCatalogo()">
-          Importar catálogo de especialidades
-        </button>
-
-      </div>
-
-      <article
-        class="panel formulario"
-        *ngIf="mostrarFormularioCurso">
-
-        <h3>Registrar curso</h3>
-
-        <form (ngSubmit)="guardarCurso()">
-
-          <div class="rejilla-formulario">
-
-            <label>
-              Código
-              <input
-                name="codigo"
-                [(ngModel)]="nuevoCurso.codigo"
-                required>
-            </label>
-
-            <label>
-              Nombre del curso
-              <input
-                name="nombreCurso"
-                [(ngModel)]="nuevoCurso.nombre"
-                required>
-            </label>
-
-            <label>
-              Familia profesional
-              <input
-                name="familia"
-                [(ngModel)]="nuevoCurso.familiaProfesional">
-            </label>
-
-            <label>
-              Duración en horas
-              <input
-                type="number"
-                min="1"
-                name="duracion"
-                [(ngModel)]="nuevoCurso.duracionHoras">
-            </label>
-
-            <label>
-              Demanda laboral estimada (0-100)
-              <input
-                type="number"
-                min="0"
-                max="100"
-                name="demanda"
-                [(ngModel)]="nuevoCurso.demandaLaboral">
-            </label>
-
-          </div>
-
-          <div class="acciones-formulario">
-
-            <button
-              type="button"
-              class="boton-secundario"
-              (click)="mostrarFormularioCurso = false">
-              Cancelar
-            </button>
-
-            <button
-              type="submit"
-              class="boton-principal">
-              Guardar curso
-            </button>
-
-          </div>
-
-        </form>
-
-      </article>
-
-      <article class="panel">
-
-        <div class="busqueda">
-          <input
-            [(ngModel)]="busquedaCurso"
-            (ngModelChange)="cambiarPagina(1)"
-            placeholder="Buscar por nombre, código o familia profesional...">
-        </div>
-
-        <div class="tabla-contenedor">
-
-          <table>
-
-            <thead>
-              <tr>
-                <th>Código</th>
-                <th>Curso</th>
-                <th>Familia profesional</th>
-                <th>Duración</th>
-                <th>Demanda estimada</th>
-                <th>Acciones</th>
-              </tr>
-            </thead>
-
-            <tbody>
-
-              <tr *ngFor="let curso of cursosPaginados">
-
-                <td>{{ curso.codigo }}</td>
-
-                <td>
-                  <strong>{{ curso.nombre }}</strong>
-                </td>
-
-                <td>
-                  {{ curso.familiaProfesionalNombre || curso.familiaProfesional }}
-                </td>
-
-                <td>{{ curso.duracionHoras }} h</td>
-
-                <td>
-                  <span
-                    class="etiqueta-demanda"
-                    [title]="curso.fuenteDemanda || 'Dato de demanda del CRM'">
-                    {{ curso.demandaLaboral != null
-                      ? (curso.demandaLaboral | number:'1.1-2') + '%'
-                      : 'Sin datos' }}
-                  </span>
-                </td>
-
-                <td>
-                  <button
-                    class="boton-peligro"
-                    (click)="eliminarCurso(curso)">
-                    Eliminar
-                  </button>
-                </td>
-
-              </tr>
-
-              <tr *ngIf="cursosFiltrados.length === 0">
-                <td colspan="6">
-                  No se han encontrado cursos.
-                </td>
-              </tr>
-
-            </tbody>
-
-          </table>
-
-        </div>
-
-        <nav class="paginacion" aria-label="Paginación de cursos">
-          <span>
-            Página {{ paginaActual }} de {{ totalPaginas }}
-            ({{ cursosPorPagina }} por página)
-          </span>
-
-          <div class="paginacion-controles">
-            <button
-              class="boton-secundario"
-              [disabled]="paginaActual === 1"
-              (click)="cambiarPagina(paginaActual - 1)">
-              Anterior
-            </button>
-
-            <button
-              class="boton-secundario"
-              [disabled]="paginaActual === totalPaginas"
-              (click)="cambiarPagina(paginaActual + 1)">
-              Siguiente
-            </button>
-          </div>
-        </nav>
-
-      </article>
-
-    </section>
-
-    <!-- RECOMENDACIONES -->
-
-    <section *ngIf="seccionActual === 'recomendaciones'">
-
-      <div class="cabecera-seccion">
-
-        <div>
-          <h2>Orientación formativa</h2>
-          <p>
-            Identifica cursos que podrían encajar con cada perfil.
-          </p>
-        </div>
-
-      </div>
-
-      <article class="panel">
-
-        <p class="aviso">
-          Las puntuaciones son orientativas y se basan en los datos
-          introducidos. No representan una tasa de inserción laboral.
-        </p>
-
-        <label class="selector-candidato">
-          Selecciona un candidato
-
-          <select
-            #selector
-            (change)="seleccionarCandidato(selector.value)">
-
-            <option value="">Seleccionar candidato...</option>
-
-            <option
-              *ngFor="let candidato of candidatos"
-              [value]="candidato.id">
-
-              {{ candidato.nombre }}
-              {{ candidato.apellidos }}
-
-            </option>
-
-          </select>
-
+        <label class="field">
+          <span>Cualificaciones y competencias</span>
+          <textarea name="cualificaciones" [(ngModel)]="perfil.cualificaciones" rows="2" placeholder="Ej.: atención al cliente, Excel, manipulación de alimentos"></textarea>
         </label>
-
-        <div *ngIf="candidatoSeleccionado as candidato">
-
-          <div class="perfil-resumen">
-
-            <div class="avatar avatar-grande">
-              {{ candidato.nombre.charAt(0) }}
+        <div class="form-grid experience-grid">
+          <label class="field">
+            <span>Experiencia profesional</span>
+            <input name="experiencia" [(ngModel)]="perfil.experiencia" placeholder="Ej.: auxiliar de clínica, ventas, almacén">
+          </label>
+          <label class="field field-hours">
+            <span>Horas aproximadas</span>
+            <div class="input-with-unit">
+              <input type="number" name="horasExperiencia" [(ngModel)]="perfil.horasExperiencia" min="0" max="50000" step="50" placeholder="0">
+              <span>h</span>
             </div>
+          </label>
+        </div>
+        <div class="form-actions">
+          <button class="submit-button" type="submit" [disabled]="cargandoCursos || cursos.length === 0">
+            <span>{{ simulacionEnviada ? 'Actualizar mi itinerario' : 'Descubrir mi itinerario' }}</span>
+            <span class="button-arrow" aria-hidden="true">↗</span>
+          </button>
+          <span class="form-hint">Tardarás menos de un minuto</span>
+        </div>
+        <p class="load-message" *ngIf="cargandoCursos">Cargando especialidades formativas…</p>
+        <p class="error-message" *ngIf="errorCursos">{{ errorCursos }}</p>
+      </form>
 
-            <div>
-              <h3>
-                {{ candidato.nombre }}
-                {{ candidato.apellidos }}
-              </h3>
+      <aside class="data-panel">
+        <div class="data-panel-top"><span class="data-panel-label">EL MERCADO, EN PERSPECTIVA</span><span class="data-spark">↗</span></div>
+        <div class="data-figure">
+          <strong>{{ empleabilidadMedia | number:'1.0-1' }}<small>%</small></strong>
+          <span>inserción laboral media<br>de las familias formativas</span>
+        </div>
+        <div class="data-divider"></div>
+        <div class="catalogue-stat"><strong>{{ cursos.length | number }}</strong><span>especialidades<br>en el catálogo</span></div>
+        <p class="data-source"><span class="source-mark">i</span> Tasas de inserción por familia profesional. Fuente: IECA.</p>
+        <div class="panel-decoration" aria-hidden="true"></div>
+      </aside>
+    </div>
+  </section>
 
-              <p>
-                {{ candidato.situacionLaboral }} ·
-                {{ candidato.nivelFormativo }} ·
-                {{ candidato.provincia }}
-              </p>
+  <section class="itinerary-section" id="itinerario" *ngIf="simulacionEnviada" aria-live="polite">
+    <div class="itinerary-heading">
+      <div>
+        <p class="eyebrow"><span>03</span> TU PROPUESTA</p>
+        <h2>Un itinerario para avanzar</h2>
+        <p class="itinerary-intro">Cursos ordenados según inserción del sector y afinidad con tu perfil.</p>
+      </div>
+      <div class="itinerary-area"><span>ÁREA ELEGIDA</span><strong>{{ nombreFamiliaSeleccionada }}</strong></div>
+    </div>
 
-              <p>
-                Experiencia:
-                {{ candidato.experiencia || 'No indicada' }}
-              </p>
-
-            </div>
-
+    <div class="itinerary-list" *ngIf="recomendaciones.length">
+      <article class="recommendation" *ngFor="let recomendacion of recomendaciones; let i = index">
+        <div class="recommendation-step">
+          <span class="step-label">PASO</span><strong>0{{ i + 1 }}</strong>
+          <span class="step-connector" *ngIf="i < recomendaciones.length - 1"></span>
+        </div>
+        <div class="recommendation-main">
+          <div class="course-meta"><span>{{ recomendacion.curso.familiaProfesionalNombre }}</span><span class="meta-separator">/</span><span>{{ recomendacion.curso.codigo }}</span></div>
+          <h3>{{ recomendacion.curso.nombre }}</h3>
+          <p class="course-reason">{{ recomendacion.motivo }}</p>
+          <div class="course-tags">
+            <span *ngIf="recomendacion.curso.duracionHoras">{{ recomendacion.curso.duracionHoras | number }} horas</span>
+            <span *ngIf="recomendacion.curso.certificado === 'Si'">Certificado profesional</span>
+            <span *ngIf="recomendacion.coincidencias.length">Afinidad: {{ recomendacion.coincidencias.join(', ') }}</span>
           </div>
+          <button
+            class="description-toggle"
+            type="button"
+            [attr.aria-expanded]="fichaAbiertaCodigo === recomendacion.curso.codigo"
+            [attr.aria-controls]="'ficha-' + recomendacion.curso.codigo"
+            (click)="alternarFicha(recomendacion.curso.codigo)">
+            {{ fichaAbiertaCodigo === recomendacion.curso.codigo ? 'Ocultar ficha completa' : 'Ver ficha completa' }}
+            <span aria-hidden="true">{{ fichaAbiertaCodigo === recomendacion.curso.codigo ? '−' : '+' }}</span>
+          </button>
 
-          <h3>Cursos recomendados</h3>
+          <section
+            class="course-detail"
+            *ngIf="fichaAbiertaCodigo === recomendacion.curso.codigo"
+            [id]="'ficha-' + recomendacion.curso.codigo">
+            <div class="detail-section">
+              <h4>Datos de la especialidad</h4>
+              <dl class="detail-facts">
+                <div><dt>Familia profesional</dt><dd>{{ recomendacion.curso.familiaProfesionalNombre }}</dd></div>
+                <div><dt>Código</dt><dd>{{ recomendacion.curso.codigo }}</dd></div>
+                <div *ngIf="recomendacion.curso.duracionHoras !== null"><dt>Duración total</dt><dd>{{ recomendacion.curso.duracionHoras | number }} horas</dd></div>
+                <div *ngIf="recomendacion.curso.horasTeoricas !== null && recomendacion.curso.horasTeoricas !== undefined"><dt>Horas teóricas</dt><dd>{{ recomendacion.curso.horasTeoricas | number }}</dd></div>
+                <div *ngIf="recomendacion.curso.horasPracticas !== null && recomendacion.curso.horasPracticas !== undefined"><dt>Horas prácticas</dt><dd>{{ recomendacion.curso.horasPracticas | number }}</dd></div>
+                <div><dt>Certificado</dt><dd>{{ recomendacion.curso.certificado === 'Si' ? 'Sí' : recomendacion.curso.certificado || 'No indicado' }}</dd></div>
+                <div><dt>Centros asociados</dt><dd>{{ recomendacion.curso.centros === 'Si' ? 'Sí' : recomendacion.curso.centros || 'No indicado' }}</dd></div>
+              </dl>
+              <p class="detail-note" *ngIf="recomendacion.curso.notaHoras">{{ recomendacion.curso.notaHoras }}</p>
+            </div>
 
-          <div
-            class="tarjeta-recomendacion"
-            *ngFor="
-              let recomendacion of obtenerRecomendaciones(candidato)
-            ">
+            <div
+              class="detail-section"
+              *ngIf="recomendacion.curso.competencias.length || recomendacion.curso.ocupacionesRelacionadas.length || recomendacion.curso.requisitos.length">
+              <div *ngIf="recomendacion.curso.competencias.length">
+                <h4>Competencias profesionales</h4>
+                <p>{{ recomendacion.curso.competencias.join(', ') }}</p>
+              </div>
+              <div *ngIf="recomendacion.curso.ocupacionesRelacionadas.length">
+                <h4>Ocupaciones relacionadas</h4>
+                <p>{{ recomendacion.curso.ocupacionesRelacionadas.join(', ') }}</p>
+              </div>
+              <div *ngIf="recomendacion.curso.requisitos.length">
+                <h4>Requisitos de acceso</h4>
+                <p>{{ recomendacion.curso.requisitos.join(', ') }}</p>
+              </div>
+            </div>
 
-            <ng-container
-              *ngIf="obtenerCursoPorId(recomendacion.cursoId) as curso">
+            <div class="detail-section" *ngIf="recomendacion.curso.cursosConvocados?.length">
+              <div class="detail-heading-row">
+                <h4>Convocatorias publicadas</h4>
+                <span *ngIf="recomendacion.curso.cursosConvocados as convocatorias">{{ convocatorias.length }} registros</span>
+              </div>
+              <article class="offering-row" *ngFor="let convocatoria of recomendacion.curso.cursosConvocados || []">
+                <div class="offering-heading">
+                  <strong>{{ convocatoria.nombre }}</strong>
+                  <span [class.offering-open]="convocatoriaEnPlazo(convocatoria)" class="offering-status">
+                    {{ obtenerEstadoConvocatoria(convocatoria) }}
+                  </span>
+                </div>
+                <dl class="detail-facts offering-facts">
+                  <div *ngIf="convocatoria.horas !== null"><dt>Horas</dt><dd>{{ convocatoria.horas | number }}</dd></div>
+                  <div *ngIf="convocatoria.fechaFinSolicitud"><dt>Fin de solicitud</dt><dd>{{ convocatoria.fechaFinSolicitud | date:'dd/MM/yyyy' }}</dd></div>
+                  <div *ngIf="convocatoria.inicioPrevisto"><dt>Inicio previsto</dt><dd>{{ convocatoria.inicioPrevisto | date:'dd/MM/yyyy' }}</dd></div>
+                  <div><dt>Ubicación</dt><dd>{{ convocatoria.ubicacion || 'No indicada en el extracto' }}</dd></div>
+                  <div *ngIf="convocatoria.expediente"><dt>Expediente</dt><dd>{{ convocatoria.expediente }}</dd></div>
+                </dl>
+                <a *ngIf="convocatoria.urlFuente" [href]="convocatoria.urlFuente" target="_blank" rel="noopener noreferrer">Consultar convocatoria oficial ↗</a>
+              </article>
+            </div>
 
-              <div class="recomendacion-superior">
-
+            <div class="detail-section" *ngIf="recomendacion.curso.centrosAutorizados?.length">
+              <div class="detail-heading-row">
+                <h4>Centros autorizados</h4>
+                <span *ngIf="recomendacion.curso.centrosAutorizados as centros">{{ centros.length }} centros</span>
+              </div>
+              <article class="center-row" *ngFor="let centro of recomendacion.curso.centrosAutorizados || []">
                 <div>
-                  <span class="texto-secundario">
-                    {{ curso.codigo }}
-                  </span>
-
-                  <h3>{{ curso.nombre }}</h3>
-
-                  <p>{{ curso.familiaProfesional }}</p>
+                  <strong>{{ centro.nombre }}</strong>
+                  <span>{{ centro.municipio }} · {{ centro.provincia }}</span>
+                  <small>Código {{ centro.codigoCentro }}</small>
                 </div>
+                <a *ngIf="centro.urlFuente" [href]="centro.urlFuente" target="_blank" rel="noopener noreferrer">Ficha del centro ↗</a>
+              </article>
+            </div>
 
-                <div class="puntuacion">
-                  <strong>
-                    {{ recomendacion.puntuacion }}
-                  </strong>
-
-                  <span>
-                    {{ obtenerNivelRecomendacion(
-                      recomendacion.puntuacion
-                    ) }}
-                  </span>
-                </div>
-
+            <div class="detail-section detail-source-section">
+              <div class="detail-heading-row">
+                <h4>Fuentes y actualización</h4>
+                <span *ngIf="recomendacion.curso.fechaConsulta">Consultado {{ recomendacion.curso.fechaConsulta | date:'dd/MM/yyyy' }}</span>
               </div>
-
-              <div class="barra-puntuacion">
-                <div
-                  class="barra-puntuacion-relleno"
-                  [style.width.%]="recomendacion.puntuacion">
-                </div>
+              <p>{{ obtenerEstadoInvestigacion(recomendacion.curso.estadoInvestigacion) }}</p>
+              <div class="source-links">
+                <a [href]="obtenerUrlDescripcion(recomendacion.curso)" target="_blank" rel="noopener noreferrer">Ficha oficial de la especialidad ↗</a>
+                <ng-container *ngIf="recomendacion.curso.fuentesOficiales as fuentes">
+                  <a *ngIf="fuentes.buscadorCentros" [href]="fuentes.buscadorCentros" target="_blank" rel="noopener noreferrer">Buscador oficial de centros ↗</a>
+                  <a *ngIf="fuentes.buscadorCursos" [href]="fuentes.buscadorCursos" target="_blank" rel="noopener noreferrer">Buscador oficial de cursos ↗</a>
+                </ng-container>
               </div>
-
-              <p>
-                <strong>Motivo:</strong>
-                {{ recomendacion.motivo }}
-              </p>
-
-              <p>
-                <strong>Duración:</strong>
-                {{ curso.duracionHoras }} horas
-              </p>
-
-              <p>
-                <strong>Ocupaciones relacionadas:</strong>
-                {{ curso.ocupacionesRelacionadas.join(', ') }}
-              </p>
-
-            </ng-container>
-
-          </div>
-
-          <p *ngIf="cursos.length === 0">
-            Todavía no hay cursos en el catálogo.
-          </p>
-
+            </div>
+          </section>
         </div>
-
+        <div class="recommendation-metrics">
+          <span class="metric-label">INSERCIÓN DEL SECTOR</span>
+          <strong *ngIf="recomendacion.curso.demandaLaboral !== null">{{ recomendacion.curso.demandaLaboral | number:'1.0-1' }}<small>%</small></strong>
+          <strong *ngIf="recomendacion.curso.demandaLaboral === null">—</strong>
+          <div class="metric-track" aria-hidden="true"><span [style.width.%]="recomendacion.curso.demandaLaboral || 0"></span></div>
+          <span class="fit-score">{{ recomendacion.puntuacion }} puntos de prioridad</span>
+          <span class="metric-source" *ngIf="recomendacion.curso.fuenteDemanda">{{ recomendacion.curso.fuenteDemanda }}</span>
+        </div>
       </article>
+    </div>
+    <div class="empty-results" *ngIf="!recomendaciones.length"><strong>No hay cursos disponibles para generar el itinerario.</strong><span>Prueba de nuevo cuando el catálogo esté cargado.</span></div>
+    <p class="disclaimer">La tasa refleja la inserción laboral de la familia profesional, no garantiza resultados individuales. La afinidad es una estimación orientativa a partir de los datos que has introducido.</p>
+  </section>
 
-    </section>
-
-    <!-- FICHA DEL CANDIDATO -->
-
-    <section
-      *ngIf="
-        seccionActual === 'ficha' &&
-        candidatoSeleccionado as candidato
-      ">
-
-      <button
-        class="boton-secundario"
-        (click)="cambiarSeccion('candidatos')">
-        ← Volver a candidatos
-      </button>
-
-      <article class="panel ficha-candidato">
-
-        <div class="perfil-resumen">
-
-          <div class="avatar avatar-grande">
-            {{ candidato.nombre.charAt(0) }}
-          </div>
-
-          <div>
-            <h2>
-              {{ candidato.nombre }}
-              {{ candidato.apellidos }}
-            </h2>
-
-            <p>{{ candidato.situacionLaboral }}</p>
-            <p>{{ candidato.provincia }}</p>
-          </div>
-
-        </div>
-
-        <hr>
-
-        <div class="rejilla-formulario">
-
-          <div>
-            <span class="texto-secundario">Correo electrónico</span>
-            <p>{{ candidato.email || 'No indicado' }}</p>
-          </div>
-
-          <div>
-            <span class="texto-secundario">Teléfono</span>
-            <p>{{ candidato.telefono || 'No indicado' }}</p>
-          </div>
-
-          <div>
-            <span class="texto-secundario">Nivel formativo</span>
-            <p>{{ candidato.nivelFormativo || 'No indicado' }}</p>
-          </div>
-
-          <div>
-            <span class="texto-secundario">Experiencia profesional</span>
-            <p>{{ candidato.experiencia || 'No indicada' }}</p>
-          </div>
-
-        </div>
-
-        <h3>Competencias</h3>
-
-        <p>
-          {{
-            candidato.competencias.length
-              ? candidato.competencias.join(', ')
-              : 'Todavía no se han registrado competencias.'
-          }}
-        </p>
-
-        <h3>Intereses profesionales</h3>
-
-        <p>
-          {{
-            candidato.interesesProfesionales.length
-              ? candidato.interesesProfesionales.join(', ')
-              : 'Todavía no se han registrado intereses.'
-          }}
-        </p>
-
-        <h3>Observaciones</h3>
-
-        <p>
-          {{ candidato.observaciones || 'Sin observaciones.' }}
-        </p>
-
-        <button
-          class="boton-principal"
-          (click)="cambiarSeccion('recomendaciones')">
-          Consultar cursos recomendados
-        </button>
-
-      </article>
-
-    </section>
-
-  </main>
-
-</div>
-<app-asistente-chat></app-asistente-chat>
+  <footer class="page-footer">
+    <span>FpMatch <span class="footer-separator">·</span> Orientación para tu próximo paso</span>
+    <span>Los datos de esta sesión no se almacenan</span>
+  </footer>
+</main>
