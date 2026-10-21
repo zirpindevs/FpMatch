@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 import {
   EspecialidadFormativa,
@@ -24,6 +25,14 @@ interface RecomendacionCurso {
   puntuacion: number;
   coincidencias: string[];
   motivo: string;
+}
+
+interface UbicacionCurso {
+  nombre: string;
+  lugar: string;
+  etiqueta: string;
+  urlMapa: string;
+  urlMapaIncrustado: SafeResourceUrl;
 }
 
 @Component({
@@ -112,12 +121,16 @@ export class AppComponent implements OnInit {
   cursos: EspecialidadFormativa[] = [];
   recomendaciones: RecomendacionCurso[] = [];
   fichaAbiertaCodigo: string | null = null;
+  private readonly ubicacionesCurso = new WeakMap<EspecialidadFormativa, UbicacionCurso[]>();
   cargandoCursos = false;
   errorCursos = '';
   simulacionEnviada = false;
   formularioEnviado = false;
 
-  constructor(private importacionCursos: ImportacionCursosService) {}
+  constructor(
+    private importacionCursos: ImportacionCursosService,
+    private sanitizer: DomSanitizer
+  ) {}
 
   ngOnInit(): void {
     this.cargarCursos();
@@ -240,6 +253,96 @@ export class AppComponent implements OnInit {
     return 'https://www.juntadeandalucia.es/empleoformacionytrabajoautonomo/' +
       'formacion/web/fichero-de-especialidades-formativas/' +
       encodeURIComponent(curso.codigo);
+  }
+
+  obtenerUbicacionesCurso(curso: EspecialidadFormativa): UbicacionCurso[] {
+    const ubicacionesGuardadas = this.ubicacionesCurso.get(curso);
+    if (ubicacionesGuardadas) {
+      return ubicacionesGuardadas;
+    }
+
+    const ubicaciones: UbicacionCurso[] = [];
+
+    (curso.centrosAutorizados || []).forEach(centro => {
+      const municipio = this.ubicacionDisponible(centro.municipio)
+        ? centro.municipio
+        : '';
+      const provincia = this.ubicacionDisponible(centro.provincia)
+        ? centro.provincia
+        : '';
+      const lugar = [municipio, provincia]
+        .filter((valor, indice, valores) =>
+          valor && valores.findIndex(otro => this.normalizar(otro) === this.normalizar(valor)) === indice
+        )
+        .join(', ');
+
+      if (lugar) {
+        ubicaciones.push(this.crearUbicacionCurso(
+          centro.nombre,
+          lugar,
+          `Centro autorizado · ${lugar}`,
+          `${centro.nombre}, ${lugar}, Andalucía`
+        ));
+      }
+    });
+
+    (curso.cursosConvocados || []).forEach(convocatoria => {
+      if (this.ubicacionDisponible(convocatoria.ubicacion)) {
+        const lugar = convocatoria.ubicacion!.trim();
+        ubicaciones.push(this.crearUbicacionCurso(
+          convocatoria.nombre,
+          lugar,
+          `Convocatoria · ${lugar}`,
+          `${convocatoria.nombre}, ${lugar}, Andalucía`
+        ));
+      }
+    });
+
+    const ubicacionesUnicas = new Map<string, UbicacionCurso>();
+    ubicaciones.forEach(ubicacion => {
+      const clave = `${this.normalizar(ubicacion.nombre)}|${this.normalizar(ubicacion.lugar)}`;
+      if (!ubicacionesUnicas.has(clave)) {
+        ubicacionesUnicas.set(clave, ubicacion);
+      }
+    });
+
+    const resultado = Array.from(ubicacionesUnicas.values());
+    this.ubicacionesCurso.set(curso, resultado);
+    return resultado;
+  }
+
+  private crearUbicacionCurso(
+    nombre: string,
+    lugar: string,
+    etiqueta: string,
+    consulta: string
+  ): UbicacionCurso {
+    const consultaCodificada = encodeURIComponent(consulta);
+    return {
+      nombre,
+      lugar,
+      etiqueta,
+      urlMapa: `https://www.google.com/maps/search/?api=1&query=${consultaCodificada}`,
+      urlMapaIncrustado: this.sanitizer.bypassSecurityTrustResourceUrl(
+        `https://maps.google.com/maps?q=${consultaCodificada}&output=embed`
+      )
+    };
+  }
+
+  private ubicacionDisponible(ubicacion: string | null | undefined): boolean {
+    if (!ubicacion?.trim()) {
+      return false;
+    }
+
+    const valor = this.normalizar(ubicacion);
+    return ![
+      'no confirmado',
+      'no confirmada',
+      'no indicada',
+      'no disponible',
+      'desconocido',
+      'desconocida'
+    ].some(texto => valor.includes(texto));
   }
 
   alternarFicha(codigo: string): void {

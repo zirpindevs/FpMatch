@@ -232,6 +232,35 @@
               </article>
             </div>
 
+            <div class="detail-section" *ngIf="obtenerUbicacionesCurso(recomendacion.curso) as ubicaciones">
+              <ng-container *ngIf="ubicaciones.length">
+                <div class="detail-heading-row">
+                  <h4>Dónde se imparte</h4>
+                  <span>{{ ubicaciones.length }} ubicaciones disponibles</span>
+                </div>
+                <p class="map-note">Ubicaciones aproximadas según los datos disponibles. Confirma la dirección exacta con el centro o en la convocatoria.</p>
+                <div class="course-maps">
+                  <article class="course-map" *ngFor="let ubicacion of ubicaciones">
+                    <div class="course-map-heading">
+                      <div>
+                        <strong>{{ ubicacion.nombre }}</strong>
+                        <span>{{ ubicacion.etiqueta }}</span>
+                      </div>
+                      <a [href]="ubicacion.urlMapa" target="_blank" rel="noopener noreferrer">
+                        Abrir en Google Maps ↗
+                      </a>
+                    </div>
+                    <iframe
+                      [src]="ubicacion.urlMapaIncrustado"
+                      [title]="'Mapa de ' + ubicacion.nombre + ', ' + ubicacion.lugar"
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                  </article>
+                </div>
+              </ng-container>
+            </div>
+
             <div class="detail-section" *ngIf="recomendacion.curso.centrosAutorizados?.length">
               <div class="detail-heading-row">
                 <h4>Centros autorizados</h4>

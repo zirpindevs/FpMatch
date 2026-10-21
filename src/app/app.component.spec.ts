@@ -178,6 +178,9 @@ describe('AppComponent', () => {
     expect(detail.textContent).toContain('En plazo de solicitud');
     expect(detail.textContent).toContain('EXP-ACTUAL');
     expect(detail.textContent).toContain('Consulta parcial de datos oficiales');
+    expect(detail.querySelectorAll('.course-map iframe').length).toBe(2);
+    expect(detail.textContent).toContain('Centro autorizado · Granada');
+    expect(detail.textContent).toContain('Convocatoria · Granada, Granada');
 
     const sourceLinks = Array.from(
       detail.querySelectorAll('a'),
@@ -211,6 +214,7 @@ describe('AppComponent', () => {
     expect(detail.textContent).not.toContain('0 registros');
     expect(detail.textContent).not.toContain('0 centros');
     expect(detail.textContent).not.toContain('No constan');
+    expect(detail.querySelector('.course-maps')).toBeNull();
   });
 
   it('prioriza cursos con afinidad y sector elegido', () => {
