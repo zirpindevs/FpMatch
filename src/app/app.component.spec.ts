@@ -241,6 +241,36 @@ describe('AppComponent', () => {
     expect(app.recomendaciones[0].coincidencias).toContain('contable');
   });
 
+  it('suma prioridad solo por convocatorias publicadas que siguen en plazo', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    fixture.detectChanges();
+
+    app.cursos = [
+      ...app.cursos,
+      {
+        ...app.cursos[0],
+        id: 'ADGD0108-SIN-CONVOCATORIA',
+        codigo: 'ADGD0108-SIN-CONVOCATORIA',
+        cursosConvocados: []
+      }
+    ];
+    app.perfil.nivelFormativo = 'Bachillerato';
+    app.perfil.familiaProfesional = 'AD';
+    app.generarItinerario();
+
+    const conConvocatoria = app.recomendaciones.find(
+      recomendacion => recomendacion.curso.codigo === 'ADGD0108'
+    );
+    const sinConvocatoria = app.recomendaciones.find(
+      recomendacion => recomendacion.curso.codigo === 'ADGD0108-SIN-CONVOCATORIA'
+    );
+
+    expect(conConvocatoria?.convocatoriasAbiertas).toBe(1);
+    expect(conConvocatoria?.bonificacionConvocatorias).toBe(3);
+    expect(conConvocatoria?.puntuacion).toBe(sinConvocatoria!.puntuacion + 3);
+  });
+
   it('no considera "atención al cliente" una cualificación específica', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;

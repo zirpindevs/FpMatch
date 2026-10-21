@@ -25,6 +25,14 @@ interface RecomendacionCurso {
   puntuacion: number;
   coincidencias: string[];
   motivo: string;
+  tasaSector: number;
+  pesoInsercion: number;
+  puntosInsercion: number;
+  afinidadPerfil: number;
+  pesoAfinidad: number;
+  puntosAfinidad: number;
+  convocatoriasAbiertas: number;
+  bonificacionConvocatorias: number;
 }
 
 interface UbicacionCurso {
@@ -462,9 +470,18 @@ export class AppComponent implements OnInit {
         ) / pesosActivos
       : 0;
     const tasa = curso.demandaLaboral ?? this.empleabilidadMedia;
-    const puntuacion = Math.round(
-      pesosActivos ? tasa * 0.35 + afinidad * 0.65 : tasa
+    const pesoInsercion = pesosActivos ? 0.35 : 1;
+    const pesoAfinidad = pesosActivos ? 0.65 : 0;
+    const puntosInsercion = tasa * pesoInsercion;
+    const puntosAfinidad = afinidad * pesoAfinidad;
+    const puntuacionBase = Math.round(puntosInsercion + puntosAfinidad);
+    const convocatoriasAbiertas = (curso.cursosConvocados || [])
+      .filter(convocatoria => this.convocatoriaEnPlazo(convocatoria)).length;
+    const bonificacionConvocatorias = Math.min(
+      100 - puntuacionBase,
+      Math.min(convocatoriasAbiertas, 2) * 3
     );
+    const puntuacion = puntuacionBase + bonificacionConvocatorias;
 
     let motivo = 'Sector con oportunidades de inserción laboral según los datos disponibles.';
     if (coincidencias.length && puntosExperiencia > 0) {
@@ -477,7 +494,20 @@ export class AppComponent implements OnInit {
       motivo = `Tu formación actual cumple los requisitos indicados: ${curso.requisitos.join(', ')}.`;
     }
 
-    return { curso, puntuacion, coincidencias, motivo };
+    return {
+      curso,
+      puntuacion,
+      coincidencias,
+      motivo,
+      tasaSector: tasa,
+      pesoInsercion,
+      puntosInsercion,
+      afinidadPerfil: afinidad,
+      pesoAfinidad,
+      puntosAfinidad,
+      convocatoriasAbiertas,
+      bonificacionConvocatorias
+    };
   }
 
   private obtenerTokens(texto: string): string[] {

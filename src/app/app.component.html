@@ -298,12 +298,26 @@
           <strong *ngIf="recomendacion.curso.demandaLaboral === null">—</strong>
           <div class="metric-track" aria-hidden="true"><span [style.width.%]="recomendacion.curso.demandaLaboral || 0"></span></div>
           <span class="fit-score">{{ recomendacion.puntuacion }} puntos de prioridad</span>
+          <span class="priority-breakdown">
+            Inserción: {{ recomendacion.tasaSector | number:'1.0-1' }}% ×
+            {{ recomendacion.pesoInsercion * 100 | number:'1.0-0' }}% =
+            {{ recomendacion.puntosInsercion | number:'1.0-1' }} puntos
+            <ng-container *ngIf="recomendacion.pesoAfinidad">
+              · Afinidad: {{ recomendacion.afinidadPerfil | number:'1.0-1' }} ×
+              {{ recomendacion.pesoAfinidad * 100 | number:'1.0-0' }}% =
+              {{ recomendacion.puntosAfinidad | number:'1.0-1' }} puntos
+            </ng-container>
+            <ng-container *ngIf="recomendacion.convocatoriasAbiertas">
+              · {{ recomendacion.convocatoriasAbiertas }} convocatoria(s) abierta(s):
+              +{{ recomendacion.bonificacionConvocatorias }} puntos
+            </ng-container>
+          </span>
           <span class="metric-source" *ngIf="recomendacion.curso.fuenteDemanda">{{ recomendacion.curso.fuenteDemanda }}</span>
         </div>
       </article>
     </div>
     <div class="empty-results" *ngIf="!recomendaciones.length"><strong>No hay cursos disponibles para generar el itinerario.</strong><span>Prueba de nuevo cuando el catálogo esté cargado.</span></div>
-    <p class="disclaimer">La tasa refleja la inserción laboral de la familia profesional, no garantiza resultados individuales. La afinidad es una estimación orientativa a partir de los datos que has introducido.</p>
+    <p class="disclaimer">La tasa refleja la inserción laboral de la familia profesional, no garantiza resultados individuales. La afinidad es una estimación orientativa a partir de los datos que has introducido. Se suman 3 puntos por cada convocatoria con plazo abierto (máximo 6). Si varios cursos tienen los mismos datos disponibles, su prioridad puede coincidir.</p>
   </section>
 
   <footer class="page-footer">

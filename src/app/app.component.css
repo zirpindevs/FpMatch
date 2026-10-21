@@ -1111,6 +1111,14 @@
   font-size: 8px;
 }
 
+.priority-breakdown {
+  display: block;
+  margin-top: 5px;
+  color: #71878a;
+  font-size: 7px;
+  line-height: 1.6;
+}
+
 .metric-source {
   display: block;
   margin-top: 5px;
