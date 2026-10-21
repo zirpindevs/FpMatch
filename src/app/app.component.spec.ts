@@ -117,6 +117,40 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('input[name="nombre"]')).toBeNull();
   });
 
+  it('marca en rojo los datos obligatorios que faltan', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    fixture.detectChanges();
+
+    app.perfil.nivelFormativo = '';
+    app.perfil.familiaProfesional = '';
+    app.generarItinerario();
+    fixture.detectChanges();
+
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelectorAll('.field-invalid select').length).toBe(2);
+    expect(compiled.querySelectorAll('.field-error').length).toBe(2);
+    expect(app.recomendaciones).toEqual([]);
+  });
+
+  it('permite añadir experiencias y exige completar las añadidas', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    fixture.detectChanges();
+
+    app.perfil.nivelFormativo = 'Bachillerato';
+    app.perfil.familiaProfesional = 'AD';
+    app.agregarExperiencia();
+    fixture.detectChanges();
+
+    expect(fixture.nativeElement.querySelectorAll('.experience-entry').length).toBe(2);
+    app.generarItinerario();
+    fixture.detectChanges();
+
+    expect(fixture.nativeElement.querySelectorAll('.experience-entry .field-invalid').length).toBe(2);
+    expect(app.recomendaciones).toEqual([]);
+  });
+
   it('muestra convocatorias, centros, horas y fuentes en la ficha completa', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
@@ -125,8 +159,7 @@ describe('AppComponent', () => {
       nivelFormativo: 'Bachillerato',
       familiaProfesional: 'AD',
       cualificaciones: 'Excel',
-      experiencia: '',
-      horasExperiencia: 0
+      experiencias: []
     };
     app.generarItinerario();
     fixture.detectChanges();
@@ -162,8 +195,7 @@ describe('AppComponent', () => {
       nivelFormativo: 'Bachillerato',
       familiaProfesional: 'CO',
       cualificaciones: '',
-      experiencia: '',
-      horasExperiencia: 0
+      experiencias: []
     };
     app.generarItinerario();
     fixture.detectChanges();
@@ -190,8 +222,10 @@ describe('AppComponent', () => {
       nivelFormativo: 'Bachillerato',
       familiaProfesional: 'AD',
       cualificaciones: 'Excel',
-      experiencia: 'Auxiliar administrativo',
-      horasExperiencia: 500
+      experiencias: [
+        { descripcion: 'Auxiliar administrativo', horas: 300 },
+        { descripcion: 'contable', horas: 200 }
+      ]
     };
     app.generarItinerario();
 
@@ -200,6 +234,7 @@ describe('AppComponent', () => {
       recomendacion => recomendacion.curso.familiaProfesional === 'AD'
     )).toBeTrue();
     expect(app.recomendaciones[0].coincidencias).toContain('excel');
+    expect(app.recomendaciones[0].coincidencias).toContain('contable');
   });
 
   it('no considera "atención al cliente" una cualificación específica', () => {
@@ -210,8 +245,7 @@ describe('AppComponent', () => {
       nivelFormativo: 'Bachillerato',
       familiaProfesional: '*',
       cualificaciones: 'atención al cliente',
-      experiencia: '',
-      horasExperiencia: 0
+      experiencias: []
     };
     app.generarItinerario();
 
@@ -232,8 +266,7 @@ describe('AppComponent', () => {
       nivelFormativo: 'Bachillerato',
       familiaProfesional: '*',
       cualificaciones: '',
-      experiencia: '',
-      horasExperiencia: 0
+      experiencias: []
     };
     app.generarItinerario();
     expect(app.recomendaciones[0].curso.codigo).toBe('ADGD0108');
@@ -252,13 +285,12 @@ describe('AppComponent', () => {
       nivelFormativo: 'Bachillerato',
       familiaProfesional: 'AD',
       cualificaciones: '',
-      experiencia: 'Auxiliar administrativo',
-      horasExperiencia: 0
+      experiencias: [{ descripcion: 'Auxiliar administrativo', horas: 0 }]
     };
     app.generarItinerario();
     const puntuacionInicial = app.recomendaciones[0].puntuacion;
 
-    app.perfil.horasExperiencia = 1000;
+    app.perfil.experiencias[0].horas = 1000;
     app.generarItinerario();
 
     expect(app.recomendaciones[0].puntuacion).toBeGreaterThan(puntuacionInicial);

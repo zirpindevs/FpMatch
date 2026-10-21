@@ -44,26 +44,30 @@
     </div>
 
     <div class="simulator-layout">
-      <form class="profile-form" (ngSubmit)="generarItinerario()">
+      <form class="profile-form" (ngSubmit)="generarItinerario()" novalidate>
         <div class="form-section-title">
           <span class="section-number">A</span>
           <div><h3>Tu punto de partida</h3><p>Selecciona tu formación actual y el área que te interesa.</p></div>
         </div>
         <div class="form-grid">
-          <label class="field">
+          <label class="field" [class.field-invalid]="formularioEnviado && !perfil.nivelFormativo">
             <span>Nivel formativo</span>
-            <select name="nivelFormativo" [(ngModel)]="perfil.nivelFormativo" required>
+            <select name="nivelFormativo" [(ngModel)]="perfil.nivelFormativo" required
+              [attr.aria-invalid]="formularioEnviado && !perfil.nivelFormativo">
               <option value="" disabled>Elige tu nivel formativo</option>
               <option *ngFor="let nivel of nivelesFormativos" [value]="nivel">{{ nivel }}</option>
             </select>
+            <span class="field-error" *ngIf="formularioEnviado && !perfil.nivelFormativo">Selecciona tu nivel formativo.</span>
           </label>
-          <label class="field">
+          <label class="field" [class.field-invalid]="formularioEnviado && !perfil.familiaProfesional">
             <span>Área profesional que te atrae</span>
-            <select name="familiaProfesional" [(ngModel)]="perfil.familiaProfesional" required>
+            <select name="familiaProfesional" [(ngModel)]="perfil.familiaProfesional" required
+              [attr.aria-invalid]="formularioEnviado && !perfil.familiaProfesional">
               <option value="" disabled>Elige un sector</option>
               <option value="*">Todas las áreas</option>
               <option *ngFor="let familia of familiasProfesionales" [value]="familia.codigo">{{ familia.nombre }}</option>
             </select>
+            <span class="field-error" *ngIf="formularioEnviado && !perfil.familiaProfesional">Selecciona un área profesional.</span>
           </label>
         </div>
 
@@ -75,18 +79,40 @@
           <span>Cualificaciones y competencias</span>
           <textarea name="cualificaciones" [(ngModel)]="perfil.cualificaciones" rows="2" placeholder="Ej.: atención al cliente, Excel, manipulación de alimentos"></textarea>
         </label>
-        <div class="form-grid experience-grid">
-          <label class="field">
-            <span>Experiencia profesional</span>
-            <input name="experiencia" [(ngModel)]="perfil.experiencia" placeholder="Ej.: auxiliar de clínica, ventas, almacén">
-          </label>
-          <label class="field field-hours">
-            <span>Horas aproximadas</span>
-            <div class="input-with-unit">
-              <input type="number" name="horasExperiencia" [(ngModel)]="perfil.horasExperiencia" min="0" max="50000" step="50" placeholder="0">
-              <span>h</span>
+        <div class="experience-column">
+          <div class="experience-entries">
+            <div class="experience-entry" *ngFor="let experiencia of perfil.experiencias; let i = index">
+              <label class="field" [class.field-invalid]="formularioEnviado && experienciaInvalida(experiencia, i)">
+                <span>Experiencia profesional {{ i + 1 }}</span>
+                <input [name]="'experiencia-' + i" [(ngModel)]="experiencia.descripcion"
+                  placeholder="Ej.: auxiliar de clínica, ventas, almacén"
+                  [attr.aria-invalid]="formularioEnviado && experienciaInvalida(experiencia, i)">
+                <span class="field-error" *ngIf="formularioEnviado && experienciaInvalida(experiencia, i)">
+                  {{ i === 0 ? 'Completa la experiencia y sus horas, o deja ambos campos vacíos.' : 'Completa ambos campos de esta experiencia.' }}
+                </span>
+              </label>
+              <label class="field field-hours" [class.field-invalid]="formularioEnviado && (experienciaInvalida(experiencia, i) || horasExperienciaInvalidas(experiencia))">
+                <span>Horas aproximadas</span>
+                <div class="input-with-unit">
+                  <input type="number" [name]="'horasExperiencia-' + i" [(ngModel)]="experiencia.horas"
+                    min="0" max="50000" step="50" placeholder="Ej.: 500"
+                    [attr.aria-invalid]="formularioEnviado && (experienciaInvalida(experiencia, i) || horasExperienciaInvalidas(experiencia))">
+                  <span>h</span>
+                </div>
+                <span class="field-error" *ngIf="formularioEnviado && experienciaInvalida(experiencia, i) && !horasExperienciaInvalidas(experiencia)">
+                  Introduce las horas correspondientes.
+                </span>
+                <span class="field-error" *ngIf="formularioEnviado && horasExperienciaInvalidas(experiencia)">
+                  Introduce un valor entre 0 y 50.000 horas.
+                </span>
+              </label>
+              <button class="remove-experience" type="button" (click)="eliminarExperiencia(i)"
+                [attr.aria-label]="'Eliminar experiencia ' + (i + 1)">×</button>
             </div>
-          </label>
+          </div>
+          <button class="add-experience" type="button" (click)="agregarExperiencia()">
+            <span aria-hidden="true">+</span> Añadir experiencia
+          </button>
         </div>
         <div class="form-actions">
           <button class="submit-button" type="submit" [disabled]="cargandoCursos || cursos.length === 0">

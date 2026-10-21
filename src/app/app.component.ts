@@ -11,8 +11,12 @@ interface PerfilSimulacion {
   nivelFormativo: string;
   familiaProfesional: string;
   cualificaciones: string;
-  experiencia: string;
-  horasExperiencia: number;
+  experiencias: ExperienciaProfesional[];
+}
+
+interface ExperienciaProfesional {
+  descripcion: string;
+  horas: number | null;
 }
 
 interface RecomendacionCurso {
@@ -102,8 +106,7 @@ export class AppComponent implements OnInit {
     nivelFormativo: '',
     familiaProfesional: '*',
     cualificaciones: '',
-    experiencia: '',
-    horasExperiencia: 0
+    experiencias: [{ descripcion: '', horas: null }]
   };
 
   cursos: EspecialidadFormativa[] = [];
@@ -112,6 +115,7 @@ export class AppComponent implements OnInit {
   cargandoCursos = false;
   errorCursos = '';
   simulacionEnviada = false;
+  formularioEnviado = false;
 
   constructor(private importacionCursos: ImportacionCursosService) {}
 
@@ -169,7 +173,17 @@ export class AppComponent implements OnInit {
   }
 
   generarItinerario(): void {
-    if (!this.perfil.nivelFormativo || !this.perfil.familiaProfesional) {
+    this.formularioEnviado = true;
+    if (
+      !this.perfil.nivelFormativo ||
+      !this.perfil.familiaProfesional ||
+      this.perfil.experiencias.some((experiencia, indice) =>
+        this.experienciaInvalida(experiencia, indice) ||
+        this.horasExperienciaInvalidas(experiencia)
+      )
+    ) {
+      this.recomendaciones = [];
+      this.simulacionEnviada = false;
       return;
     }
 
@@ -184,7 +198,7 @@ export class AppComponent implements OnInit {
       .sort((a, b) => b.puntuacion - a.puntuacion);
     const tieneCualificacionEspecifica =
       this.obtenerTokens(this.perfil.cualificaciones).length > 0 ||
-      this.obtenerTokens(this.perfil.experiencia).length > 0;
+      this.obtenerTokens(this.textoExperiencias).length > 0;
     const nivel = this.normalizar(this.perfil.nivelFormativo);
     const tieneRequisitoCompatible = cursosDisponibles.some(curso =>
       this.normalizar(curso.requisitos.join(' ')).includes(nivel)
@@ -230,6 +244,32 @@ export class AppComponent implements OnInit {
 
   alternarFicha(codigo: string): void {
     this.fichaAbiertaCodigo = this.fichaAbiertaCodigo === codigo ? null : codigo;
+  }
+
+  agregarExperiencia(): void {
+    this.perfil.experiencias.push({ descripcion: '', horas: null });
+  }
+
+  eliminarExperiencia(indice: number): void {
+    if (this.perfil.experiencias.length === 1) {
+      this.perfil.experiencias[0] = { descripcion: '', horas: null };
+      return;
+    }
+
+    this.perfil.experiencias.splice(indice, 1);
+  }
+
+  experienciaInvalida(experiencia: ExperienciaProfesional, indice: number): boolean {
+    const descripcionIntroducida = Boolean(experiencia.descripcion.trim());
+    const horasIntroducidas = experiencia.horas !== null;
+    return indice > 0
+      ? !descripcionIntroducida || !horasIntroducidas
+      : descripcionIntroducida !== horasIntroducidas;
+  }
+
+  horasExperienciaInvalidas(experiencia: ExperienciaProfesional): boolean {
+    return experiencia.horas !== null &&
+      (experiencia.horas < 0 || experiencia.horas > 50000);
   }
 
   obtenerEstadoConvocatoria(convocatoria: {
@@ -280,7 +320,11 @@ export class AppComponent implements OnInit {
       ...curso.competencias
     ].join(' ')));
     const tokensCualificacion = this.obtenerTokens(this.perfil.cualificaciones);
-    const tokensExperiencia = this.obtenerTokens(this.perfil.experiencia);
+    const tokensExperiencia = this.obtenerTokens(this.textoExperiencias);
+    const horasTotalesExperiencia = this.perfil.experiencias.reduce(
+      (total, experiencia) => total + (experiencia.horas || 0),
+      0
+    );
     const coincidenciasCualificacion = tokensCualificacion.filter(token =>
       this.coincideCualificacion(token, tokensCurso)
     );
@@ -295,7 +339,7 @@ export class AppComponent implements OnInit {
     const puntosCualificacion = Math.min(100, coincidenciasCualificacion.length * 40);
     const puntosExperiencia = coincidenciasExperiencia.length
       ? Math.min(100, coincidenciasExperiencia.length * 35 +
-        Math.min(Number(this.perfil.horasExperiencia) || 0, 1000) / 1000 * 30)
+        Math.min(horasTotalesExperiencia, 1000) / 1000 * 30)
       : 0;
     const requisitos = this.normalizar(curso.requisitos.join(' '));
     const nivel = this.normalizar(this.perfil.nivelFormativo);
@@ -365,5 +409,11 @@ export class AppComponent implements OnInit {
     return texto.toLowerCase()
       .normalize('NFD')
       .replace(/[\u0300-\u036f]/g, '');
+  }
+
+  private get textoExperiencias(): string {
+    return this.perfil.experiencias
+      .map(experiencia => experiencia.descripcion)
+      .join(' ');
   }
 }
